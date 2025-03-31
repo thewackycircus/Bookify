@@ -1,0 +1,20 @@
+services:
+  bookify.api:
+    image: ${DOCKER_REGISTRY-}bookifyapi
+    build:
+      context: .
+      dockerfile: Bookify.API/Dockerfile
+
+  bookify-db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      SA_PASSWORD: "Nanna2001!"
+      ACCEPT_EULA: "Y"
+    volumes:
+      - sqlvolume:/var/opt/mssql
+    ports:
+      - 1433:1433
+
+volumes:
+  sqlvolume:
+
