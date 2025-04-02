@@ -7,6 +7,7 @@
     <UserSecretsId>4bb01e42-7a78-4b09-a5e0-b8ad20d4995d</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <DockerComposeProjectName>Bookify</DockerComposeProjectName>
   </PropertyGroup>
 
   <ItemGroup>
